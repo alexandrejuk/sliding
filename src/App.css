@@ -1,22 +1,35 @@
-.App {
-  text-align: center;
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sliding {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  overflow-x: visible;
 }
 
-.App-link {
-  color: #09d3ac;
+.slidingContent {
+  min-width: calc(100% - 34px);
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  padding: 16px;
+  position: relative;
+  transition-property: transform;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slidingOptions {
+  margin-left: .4px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 0 4px 4px 0;
+  padding: 16px;
+  width: 50px;
+  transition-property: transform;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
 }
